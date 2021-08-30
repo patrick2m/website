@@ -1,4 +1,3 @@
-//QUESTÃO 1
 var tabProd = new Array(3);
 tabProd[0] = [ // Produto 1
 	"Death Note", 300, 450, 
@@ -32,7 +31,6 @@ write("</form></div></section></body></html>");
 close();
 }
 }
-//QUESTÃO 2
 var tabProdutos = [
 ["vazio", 0],
 ["NarShipB1T01A300", 60],
@@ -40,22 +38,21 @@ var tabProdutos = [
 ["AOT1-4A300", 130],
 ["AOT1-4A300", 130],
 ["NarutoBoxPart1A300", 130],
-["RyukFigA300", 600] ];
+["RyukFigA300", 600]
+];
 function MostraCat(ind) {
 var foto = document.getElementById("imgCat");
 var prec = document.getElementById("prcCat");
 foto.src = "Imagens/" + tabProdutos[ind][0] + ".jpg";
 prec.innerHTML = "<br/>Preço: R$ " + tabProdutos[ind][1] + ",00";
 }
-//QUESTÃO 3
 function VerificaCPF(campo) {
 	var strCPF = campo.value;
-// Letra A
+
 	if ( strCPF.length != 11 ) { 
 		alert("CPF tem de ter 11 dígitos!");
 		return false;
 	}
-// Letra B
 	var c, i;
 	for ( i = 0; i < 11; i++ ) {
 		c = strCPF.charAt(i);
@@ -64,7 +61,6 @@ function VerificaCPF(campo) {
 		return false;
 		}
 	}
-// Letra C
 	function calculaDV(num) {
 		var resto = 0, soma = 0;
 		for (i = 2; i < 11; i++) {
@@ -75,7 +71,6 @@ function VerificaCPF(campo) {
 			return (resto > 1) ? (11 - resto) : 0;
 		}
 	var	identCPF = strCPF.substring(0, 9);
-
 	var primeiro_digito = calculaDV(identCPF)
 	var segundo_digito  = calculaDV(identCPF * 10 + primeiro_digito)
 	if (primeiro_digito != strCPF.charAt(9) )
@@ -83,13 +78,10 @@ function VerificaCPF(campo) {
 	if (segundo_digito != strCPF.charAt(10) )
 		alert("Dígitos verificadores inválidos");
 }
-// QUESTÃO 4
-// Letra A
 	var tabCategoria = [
 	"Anime",
 	"Mangá",
-	"Action Figure"
-	];
+	"Action Figure" ];
 	var tabProdutos = [
 	[0, "Death Note - DVD - Completo", 85],
 	[0, "Naruto Shippuden T01 Box 01", 60],
@@ -100,8 +92,7 @@ function VerificaCPF(campo) {
 	[1, "Naruto Box P01 Vol 1-27", 130],
 	[2, "Naruto Shippuden - PVC", 210],
 	[2, "Ryuk - Death Note- PVC", 600],
-		];
-// Letra B
+	];
 	function Compra(f) {
 	var total = (f.TxtTotal.value > 0) ?
 		parseFloat(f.TxtTotal.value) : 0;
@@ -109,4 +100,4 @@ function VerificaCPF(campo) {
 	var tp = tabProdutos[nl][0];
 	f.listaPedidos.value += tabCategoria[tp] + " " + tabProdutos[nl][1] + "\n";
 	f.TxtTotal.value = total + tabProdutos[nl][2];
-	}
+}
