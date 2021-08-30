@@ -1,2 +1,2 @@
-# 1stwebsite-html-css
- 1st website made on college
+# Website-html-css
+Site feito utilisando HTML, CSS e Javascript feito no primeiro semestre do curso de Tecnologia de sistemas de Computação UFF
