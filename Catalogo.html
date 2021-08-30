@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Otaku On Titan</title> 
+	<base target="_blank" /> 
+	<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+	<link href= "https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="CSS/OtakuOnTitan.css" />
+</head>
+<body>
+	<script src="JS/OtakuOnTitan.js"></script>
+	<header>
+		<img class="imgLogo" src="Imagens/OtakuOnTitan_topo.png"/>
+	</header>
+	<nav>
+		<div class="menu">
+			<span class="botao"><a href="Index.html"> inicial </a></span>
+			<span class="botao"><a href="Destaques.html"> destaques </a></span>
+			<span class="botao"><a href="Catalogo.html"> catalogo </a></span>
+			<span class="botao"><a href="Compras.html"> compras </a></span>
+		</div>
+	</nav>
+	<section>
+		<h3>Catálogo</h3>
+		<table class="tabInfo">
+			<tr>
+				<th colspan="5" class="linTH">Itens em Mais Procurados</th>
+			</tr>
+			<tr>
+				<th class="linTH">Categoria</th>
+				<th class="linTH">Produto</th>
+				<th class="linTH">Descrição</th>
+				<th class="linTH">Foto</th>
+			</tr>
+			<tr>
+				<th rowspan="2" class="colTH">Anime</th>
+				<th rowspan="2">Naruto Shippuden</th>
+				<td><a target="_self" href="javascript:MostraCat(1);">Temporada 1 Box 1</a></td>
+				<th rowspan="6">
+					<img id="imgCat" class="imgCat" src="Imagens/vazio.jpg" />
+					<div id="prcCat" class="preco" >&nbsp;</div>
+				</th>
+			</tr>
+			<tr>
+				<td><a target="_self" href="javascript:MostraCat(2);" >Temporada 1 Box 2</a></td>
+			</tr>
+			<tr>
+				<th rowspan="3" class="colTH">Mangá</th>
+				<th rowspan="2">Attack on Titan</th>
+				<td><a target="_self" href="javascript:MostraCat(3);" >Volumes 1-4</a></td>
+			</tr>
+			<tr>
+				<td><a target="_self" href="javascript:MostraCat(4);" >Volumes 5-8</a></td>
+			</tr>
+			<tr>
+				<th>Naruto</th>
+				<td><a target="_self" href="javascript:MostraCat(5);" >Box Parte 1 - Vol 1-27 - Inglês</a></td>
+			</tr>
+			<tr>
+				<th class="colTH">Colecionáveis</th>
+				<th>Death Note</th>
+				<td><a target="_self" href="javascript:MostraCat(6);" >Ryouk em PVC</a></td>
+		</table>
+		<br/>
+	</section>
+		<footer>
+			<address class="ender">Avenida Akihabara, 123 / Tel: (21) 91234-5678 / <a href="mailto:contato@manganime.com.br">contato@manganime.com.br</a>
+			</address>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,167 @@
+/**  Estilo Geral  */ 
+
+body {
+	color: #BB0D0D;
+	font-size: 16px;
+	background-color: #FFFFFF;
+	font-family: 'Open Sans', sans-serif; } 
+ 
+a:link  { color:#DD0000; text-decoration:none; } 
+a:visited { color:#CC0000; text-decoration:none; } 
+ 
+/**  Estilo Seções  */ 
+
+header {
+	display:block;
+	text-align: center;
+	padding-bottom: 0px;
+	margin-bottom: 0px; } 
+
+ nav {
+ 	display:block;
+ 	font-size: 18px;
+ 	font-family: 'Muli', sans-serif;
+ 	border-bottom: 2px solid;
+ 	padding-bottom: 4px;
+ 	text-align: center;
+ 	margin: 2px; } 
+ 
+section { display: block; } 
+ 
+footer  { clear: both; } 
+ 
+/**  Estilo Header  */ 
+
+.ender {
+	font-size: 14px;
+	text-align: center;
+	padding-top: 10px;
+	border-top: 2px solid; } 
+ 
+img.imgLogo {
+	padding-bottom: 4px;
+	margin-bottom: 4px; } 
+
+ /**  Estilo Nav  */ 
+nav a:link  { color:#FF0000; } 
+nav a:visited { color:#EE0000; } 
+ 
+nav .menu { margin: 1px auto; } 
+ 
+nav .botao {
+	width: 100px;
+	display: inline-block;
+	margin: 0px 4px 0px 4px;
+	padding: 0px 4px 0px 4px;  } 
+ 
+/** Estilo Seção Apresentação  */
+
+ div.apres {
+ 	text-align: center;
+ 	font-size:  18px; } 
+
+/** Estilo Página Destaques  */
+
+div.itemDestaq {
+	width: 430px;
+	height: 120px;
+	padding: 10px; }
+
+ol.lisDestaq { color: #2255AA; list-style-type: katakana; }
+ul.lisDesProd { list-style-type: square; }
+img.imgDestaq { float: right; }
+.precoVelho { text-decoration-line: line-through; }
+.preco { color: #FF0000; font-weight: bold; }
+
+/** Estilo Página Catalogo  */
+
+.tabInfo {
+	color: #2255AA;
+	margin-top: 6px;
+	border-collapse: collapse;
+	background-color: #FFFFCC;
+	font-family: "arial,ubuntu"; }
+
+.tabInfo td, .tabInfo th {
+	border:  2px solid #000000;
+	padding: 6px 12px 6px 12px; }
+
+.tabInfo .linTH {
+	color: #FFFFFF;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #0077BB; }
+
+.tabInfo .colTH {
+	color: #005599;
+	text-align: left;
+	background-color: #FFCC77; }
+
+.tabInfo .preco {
+	color: #CC0000;
+	font-weight: bold;
+	vertical-align: middle; }
+
+img.imgCat {
+	width: 180px;
+	height: 180px;
+	border: 3px solid #226699;
+	padding: 12px;
+	background-color: white;
+}
+
+/** Estilo Formulário Compras */
+/*** Fieldsets ***/
+
+ fieldset {
+ 	color: #2255AA;
+ 	background-color: #FFFFCC;
+ 	margin: 20px 10px 0px 10px; }
+
+.fsDados { width: 510px; }
+.fsEsq {
+	float: left;
+	margin: 0px 0px 6px 0px; }
+.fsDir { 
+	float: right;
+	width: 220px;
+	margin: 0px 0px 6px 0px; }
+
+/*** Elementos do Formulário ***/
+
+.meiaLinDir {
+	float: right;
+	width: 220px;
+	margin-bottom: 6px; }
+
+.meiaLinEsq {
+	float: left;
+	width: 220px;
+	margin-top: 6px;
+	margin-bottom: 18px; }
+
+.divLinha {
+	width: 490px;
+	margin-bottom: 18px; }
+
+.colPri {
+	float: left;
+	width: 84px;
+	display: block; }
+
+.elemDir {
+	float: right;
+	display: block; }
+
+.botoes {
+	text-align: left;
+	margin:  12px 10px 12px 10px; }
+
+/*** Tamanho de Input ***/
+
+.inpGrande  { width: 390px; }
+.inpMedio   { width: 120px; }
+.inpTelef   { width: 90px;  }
+.numDD      { width:40px;   }
+.numQD      { width:60px;   }
+#inpNCC     { width: 130px; }

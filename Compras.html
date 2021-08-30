@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Otaku On Titan</title> 
+	<base target="_blank" /> 
+	<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+	<link href= "https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="CSS/OtakuOnTitan.css" />
+</head>
+<body>
+	<script src="JS/OtakuOnTitan.js"></script>
+	<header>
+		<img class="imgLogo" src="Imagens/OtakuOnTitan_topo.png"/>
+	</header>
+	<nav>
+		<div class="menu">
+			<span class="botao"><a href="Index.html"> inicial </a></span>
+			<span class="botao"><a href="Destaques.html"> destaques </a></span>
+			<span class="botao"><a href="Catalogo.html"> catalogo </a></span>
+			<span class="botao"><a href="Compras.html"> compras </a></span>
+		</div>
+	</nav>
+	<section>
+		<h3>Compras</h3>
+		<form method="POST"> 
+ 			<fieldset class="fsDados">
+ 				<legend>Dados Pessoais</legend>
+ 				<div class="divLinha">
+ 					<label class="colPri">Nome: </label><input type="text" class="inpGrande" name="TxtNomeCompleto"/>
+ 				</div>
+ 				<div class="divLinha">
+ 					<label class="colPri">Endereço: </label><textarea name="TxtEnder" rows="2" class="inpGrande"></textarea>
+ 				</div>
+ 				<div class="meiaLinDir">
+ 					<fieldset class="fsDir">
+ 						<legend>Nascimento:</legend>
+ 						<input type="number" name="TxtDiaNasc"min="1" max="31" class="numDD"/>/
+ 						<input type="number" name="TxtMesNasc"min="1" max="12" class="numDD"/>/
+ 						<input type="number" name="TxtAnoNasc" value="1980" min="1920" max="2002" class="numQD"/>
+ 					</fieldset>
+ 					<fieldset class="fsDir">
+ 						<legend>Genero:</legend>
+ 						<label>
+ 							<input type="radio" name="TglSexo" value="M" checked/>Mas
+ 						</label>
+ 						<label>
+ 							<input type="radio" name="TglSexo" value="F"/>Fem
+ 						</label>
+ 						<label>
+ 							<input type="radio" name="TglSexo" value="O"/>Outro
+ 						</label>
+ 					</fieldset>
+ 				</div>
+ 				<div class="meiaLinEsq">
+ 					<label class="colPri" for="TxtCPF">CPF: </label>
+ 					<input type="text" class="inpMedio" name="TxtCPF" id="TxtCPF" required onchange = "VerificaCPF(this);" />
+ 				</div>
+ 				<div class="meiaLinEsq">
+ 					<label class="colPri" for="TxtTel">Telefone:</label>
+ 					<input type="text" class="inpTelef" name="TxtTel" id="TxtTel" required />
+ 				</div>
+ 				<div class="meiaLinEsq">
+ 					<label class="colPri" for="TxtCel">Celular:</label>
+ 					<input type="text" class="inpTelef" name="TxtCel" id="TxtCel" />
+ 				</div>
+ 			</fieldset>
+ 			<fieldset class="fsDados">
+ 				<legend> Seleção de  Produtos e Pagamento&nbsp;</legend>
+ 				<textarea class="elemDir" name="listaPedidos" readonly cols="28" rows="14"></textarea>
+ 				<div class="divLinha"> Produtos:
+ 					<br/>
+ 					<Select name="selProduto" id="selProduto">
+ 						<option>-----</option>
+ 					<script>
+						for (t = 0; t < tabCategoria.length; t++) {
+							document.write("<optgroup label='", tabCategoria[t], "'>");
+						for (p = 0; p < tabProdutos.length; p++) {
+							if (tabProdutos[p][0] == t) {
+								with (document) {
+									write("<option>");
+									write(tabProdutos[p][1]);
+									write("</option>\n");
+									}
+								}
+							}
+						document.write("</optgroup>\n");
+						}
+					</script>
+ 					</select>
+ 					<input type="button" value="Comprar" onClick="Compra(this.form);" />
+ 				</div>
+ 				<br/>
+ 				
+ 				<fieldset class="fsEsq">
+ 					<legend> Dados do Cartão&nbsp;</legend>
+ 					<fieldset class="fsEsq">
+ 						<legend> Bandeira:</legend>
+ 						<label>
+ 							<input type="radio" name="RadBand" checked />Visa
+ 						</label>
+ 						<label>
+ 							<input type="radio" name="RadBand" />Master
+ 						</label>
+ 						<label>
+ 							<input type="radio" name="RadBand" />Amex
+ 						</label>
+ 					</fieldset>
+ 					<br/>
+ 					<br/>
+ 					<br/>
+ 					<br/>
+ 					<div>
+ 						<label class="colPri" for="mesVal">Validade:</label>
+ 						<input type="number" name="TxtMesVal"  id="mesVal" min="1" max="12" class="numDD" value="1" />/
+ 						<input type="number" name="TxtAnoVal" value="2021" min="2020" max="2030" class="numQD" />
+ 					</div>
+ 					<div>
+ 						<br/>
+ 						<label class="colPri" for="inpNCC">Número:</label>
+ 						<input type=text name="TxtNumCard" id="inpNCC"/>
+ 					</div>
+ 				</fieldset>
+				<label class="elemDir" for="TxtTotal">
+						<br/>Valor: R$ <input type="text" name="TxtTotal" readonly id="TxtTotal" class="inpMedio" />
+				</label>
+				</fieldset>
+				<div class="botoes">
+					<input type="submit" value="Enviar" />
+					<input type="reset"  value="Limpar" />
+				</div>
+			</form>
+	</section>
+	<footer>
+		<address class="ender">Avenida Akihabara, 123 / Tel: (21) 91234-5678 / <a href="mailto:contato@manganime.com.br">contato@manganime.com.br</a>
+		</address>
+	</footer>
+</body>
+</html>
