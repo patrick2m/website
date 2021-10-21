@@ -31,7 +31,7 @@ write("</form></div></section></body></html>");
 close();
 }
 }
-var tabProdutos = [
+var tabProdutosIcon = [
 ["vazio", 0],
 ["NarShipB1T01A300", 60],
 ["NarShipB1T01A300", 60],
@@ -43,7 +43,7 @@ var tabProdutos = [
 function MostraCat(ind) {
 var foto = document.getElementById("imgCat");
 var prec = document.getElementById("prcCat");
-foto.src = "Imagens/" + tabProdutos[ind][0] + ".jpg";
+foto.src = "Imagens/" + tabProdutosIcon[ind][0] + ".jpg";
 prec.innerHTML = "<br/>Preço: R$ " + tabProdutos[ind][1] + ",00";
 }
 function VerificaCPF(campo) {
