@@ -1,0 +1,23 @@
+.DS_Store
+CSS
+Imagens
+JS
+/dist
+
+
+# local env files
+.env.local
+.env.*.local
+
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.html
+*.css
+*js
