@@ -4,10 +4,10 @@ body {
 	color: #BB0D0D;
 	font-size: 16px;
 	background-color: #FFFFFF;
-	font-family: 'Open Sans', sans-serif; } 
- 
-a:link  { color:#DD0000; text-decoration:none; } 
-a:visited { color:#CC0000; text-decoration:none; } 
+	font-family: 'Open Sans', sans-serif; }
+
+a:link  { color:#DD0000; text-decoration:none; }
+a:visited { color:#CC0000; text-decoration:none; }
  
 /**  Estilo Seções  */ 
 
@@ -15,7 +15,7 @@ header {
 	display:block;
 	text-align: center;
 	padding-bottom: 0px;
-	margin-bottom: 0px; } 
+	margin-bottom: 0px; }
 
  nav {
  	display:block;
@@ -24,41 +24,41 @@ header {
  	border-bottom: 2px solid;
  	padding-bottom: 4px;
  	text-align: center;
- 	margin: 2px; } 
+ 	margin: 2px; }
  
-section { display: block; } 
- 
-footer  { clear: both; } 
- 
-/**  Estilo Header  */ 
+section { display: block; }
+
+footer  { clear: both; }
+
+/**  Estilo Header  */
 
 .ender {
 	font-size: 14px;
 	text-align: center;
 	padding-top: 10px;
-	border-top: 2px solid; } 
- 
+	border-top: 2px solid; }
+
 img.imgLogo {
 	padding-bottom: 4px;
-	margin-bottom: 4px; } 
+	margin-bottom: 4px; }
 
- /**  Estilo Nav  */ 
-nav a:link  { color:#FF0000; } 
-nav a:visited { color:#EE0000; } 
- 
-nav .menu { margin: 1px auto; } 
+/**  Estilo Nav  */
+nav a:link  { color:#FF0000; }
+nav a:visited { color:#EE0000; }
+
+nav .menu { margin: 1px auto; }
  
 nav .botao {
 	width: 100px;
 	display: inline-block;
 	margin: 0px 4px 0px 4px;
-	padding: 0px 4px 0px 4px;  } 
+	padding: 0px 4px 0px 4px;  }
  
 /** Estilo Seção Apresentação  */
 
  div.apres {
  	text-align: center;
- 	font-size:  18px; } 
+ 	font-size:  18px; }
 
 /** Estilo Página Destaques  */
 
@@ -115,7 +115,7 @@ img.imgCat {
 /** Estilo Formulário Compras */
 /*** Fieldsets ***/
 
- fieldset {
+fieldset {
  	color: #2255AA;
  	background-color: #FFFFCC;
  	margin: 20px 10px 0px 10px; }
@@ -124,7 +124,7 @@ img.imgCat {
 .fsEsq {
 	float: left;
 	margin: 0px 0px 6px 0px; }
-.fsDir { 
+.fsDir {
 	float: right;
 	width: 220px;
 	margin: 0px 0px 6px 0px; }

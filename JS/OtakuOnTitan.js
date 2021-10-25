@@ -34,7 +34,7 @@ close();
 var tabProdutosIcon = [
 ["vazio", 0],
 ["NarShipB1T01A300", 60],
-["NarShipB1T01A300", 60],
+["NarShipB2T01A300", 60],
 ["AOT1-4A300", 130],
 ["AOT1-4A300", 130],
 ["NarutoBoxPart1A300", 130],
